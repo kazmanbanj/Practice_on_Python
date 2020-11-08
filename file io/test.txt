@@ -1,0 +1,7 @@
+My name is Kazeem
+hello
+helllo
+hithis will append to the text file<br>this will append to the text file
+ this will append to the text file
+this will append to the text file	this will append to the text file
+this will append to the text file with the mode a
