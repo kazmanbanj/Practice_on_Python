@@ -2,8 +2,8 @@ import sys
 import os
 from PIL import Image
 
-image_folder = sys.argv[1]
-output_folder = sys.argv[2]
+image_folder = sys.argv[1]  # represents argument 1 when called in the terminal
+output_folder = sys.argv[2]  # represents argument 2 when called in the terminal
 
 # print(image_folder, output_folder)
 
@@ -17,5 +17,5 @@ for filename in os.listdir(image_folder):
     print('all done')
 
 
-# run this to create a new folder and move the files in imaes to the new folder
+# run this to create a new folder and move the files in images to the new folder
 # .\JPGtoPNGconverter.py images/ new/
