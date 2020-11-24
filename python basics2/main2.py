@@ -313,3 +313,13 @@ def outer():
     print("outer:", x)
 outer()
 
+
+
+
+
+# *kw & **kwargs
+def args_and_kwargs(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+args_and_kwargs(12, 34, 56. name='Ajose', location='UK')

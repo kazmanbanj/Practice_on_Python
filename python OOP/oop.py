@@ -55,6 +55,10 @@ player1 = PlayerCharacter('Ade', 44)
 
 
 
+
+
+
+
 # Inheritance                       under 4pillars of OOP
 class User():
     def sign_in(self):
@@ -78,6 +82,53 @@ class Archer(User):
 
 wizard1 = Wizard()
 # print(wizard1.sign_in())
+
+
+
+
+
+
+
+# Another inheritance example
+class Student:
+    def __init__(self, name, school):
+        self.name = name
+        self.school = school
+        self.marks = []
+    
+    def average(self):
+        return sum(self.marks) / len(self.marks)
+
+    # in order for parent class to access the argument 'salary' in the child class
+    @classmethod
+    def friend(cls, origin, friend_name, *args):
+        return cls(friend_name, origin.school, *args)
+
+##
+
+# this inheited from the student class
+class WorkingStudent(Student):
+    def __init__(self, name, school, salary, job_title):
+        super().__init__(name, school)
+        self.salary = salary
+        self.job_title = job_title
+    
+anna = WorkingStudent("Anna", "Oxford", 23, "developer")
+
+friend = WorkingStudent.friend(anna, "Greg", 17.50, "developer")
+print(friend.name)
+print(friend.school)
+print(anna.salary)
+print(friend.salary)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,4 +206,4 @@ class A(X,Y):pass
 class B(Y,Z):pass
 class M(B,A,Z):pass
 
-print(M.__mro__)
+# print(M.__mro__)

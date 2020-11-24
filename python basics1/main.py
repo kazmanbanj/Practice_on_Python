@@ -239,10 +239,10 @@ dictionary = {
     123: [1,2,3],
     True: 'hello',
     [100]: True,
-    '[256]': False,
-    '[256]': 'hello'
+    '[29886]': False,
+    '[2986]': 'hello'
 }
-print(dictionary('[256]'))
+print(dictionary('[2986]'))
 
 # dictionary method
 user = {
